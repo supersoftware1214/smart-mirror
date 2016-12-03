@@ -9,24 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
+var app_component_1 = require('./components/app.component');
+var time_component_1 = require('./components/time.component');
+var time_service_1 = require('./services/time.service');
 var main_component_1 = require('./components/main.component');
-var routes = [
-    {
-        path: '', component: main_component_1.MainComponent
+var routes_module_1 = require('./routes.module');
+var AppModule = (function () {
+    function AppModule() {
     }
-];
-var RoutesModule = (function () {
-    function RoutesModule() {
-    }
-    RoutesModule = __decorate([
+    AppModule = __decorate([
         core_1.NgModule({
-            imports: [router_1.RouterModule.forRoot(routes)],
-            exports: [router_1.RouterModule],
+            imports: [platform_browser_1.BrowserModule, routes_module_1.RoutesModule, http_1.HttpModule],
+            declarations: [app_component_1.AppComponent, time_component_1.TimeComponent, main_component_1.MainComponent],
+            bootstrap: [app_component_1.AppComponent],
+            providers: [time_service_1.timeService]
         }), 
         __metadata('design:paramtypes', [])
-    ], RoutesModule);
-    return RoutesModule;
+    ], AppModule);
+    return AppModule;
 }());
-exports.RoutesModule = RoutesModule;
-//# sourceMappingURL=routes.module.js.map
+exports.AppModule = AppModule;
+//# sourceMappingURL=app.module.js.map
