@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @angular/HTTP_PROVIDERS
+20 silly mapToRegistry name @angular/HTTP_PROVIDERS
+21 silly mapToRegistry scope (from package name) @angular
+22 verbose mapToRegistry no registry URL found in name for scope @angular
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: '@angular/HTTP_PROVIDERS',
+25 silly mapToRegistry   scope: '@angular',
+25 silly mapToRegistry   escapedName: '@angular%2fHTTP_PROVIDERS',
+25 silly mapToRegistry   name: '@angular/HTTP_PROVIDERS',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fHTTP_PROVIDERS
+27 verbose request uri https://registry.npmjs.org/@angular%2fHTTP_PROVIDERS
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 9:46:47 PM
+30 verbose request id 99c8e1aea9066b99
+31 http request GET https://registry.npmjs.org/@angular%2fHTTP_PROVIDERS
+32 http 404 https://registry.npmjs.org/@angular%2fHTTP_PROVIDERS
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=0',
+33 verbose headers   'content-length': '21',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Thu, 01 Dec 2016 02:46:48 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   age: '0',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-iad2121-IAD',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1480560408.455772,VS0,VE290' }
+34 silly get cb [ 404,
+34 silly get   { 'content-type': 'application/json',
+34 silly get     'cache-control': 'max-age=0',
+34 silly get     'content-length': '21',
+34 silly get     'accept-ranges': 'bytes',
+34 silly get     date: 'Thu, 01 Dec 2016 02:46:48 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     age: '0',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-iad2121-IAD',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1480560408.455772,VS0,VE290' } ]
+35 silly fetchPackageMetaData Error: Not found : @angular/HTTP_PROVIDERS
+35 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+35 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+35 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+35 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+35 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+35 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+35 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+35 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+35 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+35 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+35 silly fetchPackageMetaData  error for @angular/HTTP_PROVIDERS@~2.2.0 { Error: Not found : @angular/HTTP_PROVIDERS
+35 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+35 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+35 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+35 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+35 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+35 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+35 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+35 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+35 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+35 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+35 silly fetchPackageMetaData   pkgid: '@angular/HTTP_PROVIDERS',
+35 silly fetchPackageMetaData   statusCode: 404,
+35 silly fetchPackageMetaData   code: 'E404' }
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Finishing
+39 silly install printInstalled
+40 verbose stack Error: Not found : @angular/HTTP_PROVIDERS
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 404
+42 verbose pkgid @angular/HTTP_PROVIDERS
+43 verbose cwd /Users/jhofland/ng2-electron-master
+44 error Darwin 14.5.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E404
+49 error 404 Not found : @angular/HTTP_PROVIDERS
+50 error 404
+51 error 404 '@angular/HTTP_PROVIDERS' is not in the npm registry.
+52 error 404 Your package name is not valid, because
+53 error 404 1. name can no longer contain capital letters
+54 error 404 It was specified as a dependency of 'ng2-electron'
+55 error 404 Note that you can also install from a
+56 error 404 tarball, folder, http url, or git url.
+57 verbose exit [ 1, true ]

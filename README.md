@@ -1,2 +1,2 @@
-# smart-mirror
-Uses electron and angular 2
+# ng2-electron
+Using Angular2 with Electron
